@@ -26,7 +26,14 @@ brew install npm
 
 ### Clone this repo
 ```bash
-git clone [repo url]
+# create a dev directory
+mkdir ~/Documents/dev
+
+# change into the directory
+cd ~/Documents/dev
+
+# clone the repo
+git clone https://github.com/thrasher/bugsim.git
 ```
 
 ## Run Vite
