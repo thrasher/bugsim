@@ -57,3 +57,26 @@ npm install
 Changes to the code should be reflected in the website. From the Terminal, view the website by pressing 'o'.
 
 Quit Vite by pressing 'q'.
+
+## Requested SPAIA features
+
+1. Remove "Hello Vite! and other text.
+
+1. Add date/timestamp to upper left corner of screen, that updates with each second, as an overlay on the image.
+
+1. add static (still photo) background image that fills the entire background
+
+1. add video background image, that plays a video clip in a loop
+
+1. add URL parameter that chooses the background image
+
+1. Add sprite for bee
+
+1. Add sprite for housefly
+
+1. Add three sizes of bee (small, medium, large)
+
+1. add URL parameters that tell which insects to include
+
+1. add URL parameters that tell how many insects to include
+
