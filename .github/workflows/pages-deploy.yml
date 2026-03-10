@@ -48,6 +48,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    # Grant GITHUB_TOKEN the permission to deploy to GitHub Pages
+    permissions:
+      contents: write # to deploy to GitHub Pages
+      id-token: write # to authenticate with the deployment API
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
