@@ -1,29 +1,40 @@
 import './style.css'
+import { BugController, SpiderController, LightCrimsonUnderwingMothController, ApisMelliferaBeeController } from './bug.js';
 import { initTimestamp } from './timestamp.js';
 
-document.querySelector('#app').innerHTML = `
-    <div id="datetime-overlay" style="position: fixed; top: 10px; left: 10px; background: black; color: white; padding: 5px 10px; font-family: monospace; z-index: 10000000; border-radius: 4px;"></div>
-`
+document.querySelector('#app').innerHTML = ``
 
-initTimestamp('datetime-overlay');
+const params = new URLSearchParams(window.location.search);
 
-new BugController({
-    'minBugs':1, 
-    'minBugs':500, 
-    'mouseOver':'multiply'
-});
+if (params.get('time') === 'true') {
+    initTimestamp('datetime-overlay');
+}
 
-new SpiderController({
-});
+if (params.get('bug') === 'true') {
+    new BugController({
+        'minBugs':1, 
+        'minBugs':500, 
+        'mouseOver':'multiply'
+    });
+}
 
-new LightCrimsonUnderwingMothController({
-    'minBugs':1, 
-    'minBugs':500, 
-    'mouseOver':'multiply'
-});
+if (params.get('spider') === 'true') {
+    new SpiderController({
+    });
+}
 
-new ApisMelliferaBeeController({
-    'minBugs':1, 
-    'minBugs':500, 
-    'mouseOver':'multiply'
-});
+if (params.get('moth') === 'true') {
+    new LightCrimsonUnderwingMothController({
+        'minBugs':1, 
+        'minBugs':500, 
+        'mouseOver':'multiply'
+    });
+}
+
+if (params.get('bee') === 'true') {
+    new ApisMelliferaBeeController({
+        'minBugs':1, 
+        'minBugs':500, 
+        'mouseOver':'multiply'
+    });
+}

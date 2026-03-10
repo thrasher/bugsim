@@ -330,12 +330,12 @@ var BugDispatch = {
 
 };
 
-var BugController = function() {
+export var BugController = function() {
     this.initialize.apply(this, arguments);
 }
 BugController.prototype = BugDispatch;
 
-var SpiderController = function() {
+export var SpiderController = function() {
     var spiderOptions = {
         imageSprite: 'spider-sprite.png',
         bugWidth: 69,
@@ -358,7 +358,7 @@ var SpiderController = function() {
 }
 SpiderController.prototype = BugDispatch;
 
-var LightCrimsonUnderwingMothController = function() {
+export var LightCrimsonUnderwingMothController = function() {
     var mothOptions = {
         imageSprite: 'light-crimson-underwing-moth.png',
         bugWidth: 252,
@@ -380,7 +380,7 @@ var LightCrimsonUnderwingMothController = function() {
 }
 LightCrimsonUnderwingMothController.prototype = BugDispatch;
 
-var ApisMelliferaBeeController = function() {
+export var ApisMelliferaBeeController = function() {
     var beeOptions = {
         imageSprite: 'apis-mellifera-bee.png',
         bugWidth: 252,
