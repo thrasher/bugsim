@@ -13,7 +13,7 @@ if (params.get('time') === 'true') {
 const flyCount = parseInt(params.get('fly'), 10);
 if (!isNaN(flyCount)) {
     new BugController({
-        'minBugs': flyCount,
+        'maxBugs': flyCount,
         'mouseOver':'multiply'
     });
 }
@@ -21,14 +21,14 @@ if (!isNaN(flyCount)) {
 const spiderCount = parseInt(params.get('spider'), 10);
 if (!isNaN(spiderCount)) {
     new SpiderController({
-        'minBugs': spiderCount, 
+        'maxBugs': spiderCount, 
     });
 }
 
 const mothCount = parseInt(params.get('moth'), 10);
 if (!isNaN(mothCount)) {
     new LightCrimsonUnderwingMothController({
-        'minBugs': mothCount, 
+        'maxBugs': mothCount, 
         'mouseOver':'multiply'
     });
 }
@@ -36,7 +36,7 @@ if (!isNaN(mothCount)) {
 const beeCount = parseInt(params.get('bee'), 10);
 if (!isNaN(beeCount)) {
     new ApisMelliferaBeeController({
-        'minBugs': beeCount, 
+        'maxBugs': beeCount, 
         'mouseOver':'multiply'
     });
 }
