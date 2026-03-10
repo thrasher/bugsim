@@ -11,8 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-playwright-report/  # Ignore Playwright test reports
-test-results/  # Ignore test result files
+playwright-report/*  # Ignore Playwright test reports
+test-results/*       # Ignore test result files
 
 # Editor directories and files
 .vscode/*
