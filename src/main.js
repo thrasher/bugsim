@@ -6,6 +6,17 @@ document.querySelector('#app').innerHTML = ``
 
 const params = new URLSearchParams(window.location.search);
 
+function applyBackground() {
+    const bg = params.get('background');
+    if (bg) {
+        document.body.style.backgroundImage = `url('${bg}')`;
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundAttachment = 'fixed';
+    }
+}
+applyBackground();
+
 if (params.get('time') === 'true') {
     initTimestamp('datetime-overlay');
 }
