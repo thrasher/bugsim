@@ -6,3 +6,24 @@ document.querySelector('#app').innerHTML = `
 `
 
 initTimestamp('datetime-overlay');
+
+new BugController({
+    'minBugs':1, 
+    'minBugs':500, 
+    'mouseOver':'multiply'
+});
+
+new SpiderController({
+});
+
+new LightCrimsonUnderwingMothController({
+    'minBugs':1, 
+    'minBugs':500, 
+    'mouseOver':'multiply'
+});
+
+new ApisMelliferaBeeController({
+    'minBugs':1, 
+    'minBugs':500, 
+    'mouseOver':'multiply'
+});
