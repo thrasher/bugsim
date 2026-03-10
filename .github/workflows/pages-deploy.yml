@@ -33,4 +33,4 @@ jobs:
       - name: Build vite app site
         run: |
           echo Building vite app site for deployment to Pages...
-          npm run build -- --base-href /gh-pages-workflow/
+          npm run build
