@@ -358,6 +358,51 @@ var SpiderController = function() {
 }
 SpiderController.prototype = BugDispatch;
 
+var LightCrimsonUnderwingMothController = function() {
+    var mothOptions = {
+        imageSprite: 'light-crimson-underwing-moth.png',
+        bugWidth: 252,
+        bugHeight: 252,
+        num_frames: 4,
+        canFly: true,
+        canDie: true,
+        numDeathTypes: 1,
+        zoom: 4,
+        minDelay: 500,
+        maxDelay: 5000,
+        minSpeed: 3,
+        maxSpeed: 8,
+        minBugs: 1,
+        maxBugs: 5
+    };
+    this.options = mergeOptions(this.options, mothOptions);
+    this.initialize.apply(this, arguments);
+}
+LightCrimsonUnderwingMothController.prototype = BugDispatch;
+
+var ApisMelliferaBeeController = function() {
+    var beeOptions = {
+        imageSprite: 'apis-mellifera-bee.png',
+        bugWidth: 252,
+        bugHeight: 252,
+        num_frames: 4,
+        canFly: true,
+        canDie: true,
+        numDeathTypes: 1,
+        zoom: 4,
+        minDelay: 500,
+        maxDelay: 5000,
+        minSpeed: 4,
+        maxSpeed: 10,
+        minBugs: 1,
+        maxBugs: 5
+    };
+    this.options = mergeOptions(this.options, beeOptions);
+    this.initialize.apply(this, arguments);
+}
+ApisMelliferaBeeController.prototype = BugDispatch;
+
+
 /***************/
 /**    Bug    **/
 /***************/
