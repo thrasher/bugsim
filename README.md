@@ -2,6 +2,8 @@
 
 BugSim provides a web-based visualalization of bugs as a test harness for detectors, and for fun.
 
+[Try it yourself](https://thrasher.github.io/bugsim/?fly=11&moth=3&bee=7&spider=5&time=true&background=dolomites.jpg). Change the query parameters on the page to configure what is displayed.
+
 ## Development Guide
 
 Follow these steps to get started and set up your development environment.
